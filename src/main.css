@@ -1,0 +1,239 @@
+:root {
+  --main-color: rgb(255, 245, 224);
+  --hover-: rgb(255, 167, 86);
+  --hover-2: rgb(224, 176, 60);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Start of Navigation Bar*/
+.navbar {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  font-size: 16px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  background-color: var(--main-color);
+}
+.logo > a > img {
+  margin: 15px;
+  width: 100px;
+}
+.nav-items {
+  display: inline-block;
+  padding: 10px;
+}
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-links:hover {
+  color: var(--hover-2);
+}
+label:hover {
+  color: var(--hover-2);
+}
+.navbar ul li {
+  position: relative;
+}
+.nav-items {
+  position: relative;
+}
+.nav-items::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--hover-);
+  left: 0;
+  bottom: -1px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  pointer-events: none;
+}
+.nav-items:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  opacity: 1;
+}
+
+/*Start of Sub Menu Section*/
+.sub-menu {
+  display: none;
+  position: relative;
+}
+.sub-menu ul {
+  display: block;
+  margin-right: 8px;
+}
+.sub-menu ul li {
+  width: 100%;
+}
+.subs{
+  font-size: 18px;
+}
+.subs.active > .sub-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--main-color);
+  z-index: 5;
+}
+.subs.active > .arrow {
+  transform: rotate(180deg);
+  transition: 0.5s all ease-in;
+}
+/*Start of Arrow Animation*/
+input[type="checkbox"]:checked ~ .sub-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--main-color);
+}
+input[type="checkbox"]:checked ~ .arrow {
+  transform: rotate(180deg);
+  transition: 0.5s all ease-in;
+}
+
+/*End of Arrow Animation*/
+
+/*Start of Hamburger Menu*/
+.navham {
+  display: none;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+.bar {
+  display: block;
+  width: 33px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 5px;
+}
+/*End of Hamburger Menu*/
+/*End of Navigation Bar*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--main-color);
+}
+/*Start of Home Section*/
+#Home {
+  width: 100%;
+}
+.contents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.details {
+  padding: 20px;
+}
+.details > h1,
+p {
+  text-align: justify;
+  padding-bottom: 30px;
+}
+.details > h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.more > a {
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.more > a:hover {
+  background-color: var(--hover-);
+  transition: 0.3s;
+}
+
+.img-content > img {
+  width: 600px;
+  margin: 10px;
+}
+
+
+
+/* Start of Members Section */
+.Members {
+  width: 100%;
+  display: none;
+}
+.header {
+  text-align: center;
+}
+/* End of Members Section */
+@media (width < 720px) {
+  .navham {
+    display: block;
+    z-index: 2;
+  }
+  .navham.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navham.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navham.active .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .navbar li {
+    display: block;
+    padding-left: 4rem;
+  }
+  .navlist {
+    opacity: 1;
+    position: fixed;
+    top: -100%;
+    background-color: var(--main-color);
+    width: 50%;
+    height: 100%;
+
+    transition: 0.5s;
+    z-index: 0;
+    right: 0;
+  }
+  .nav-item {
+    margin: 16px 10px;
+  }
+  .navlist.active {
+    top: 99px;
+  }
+
+  .contents {
+    flex-direction: column;
+  }
+  .details > h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .details > p {
+    font-size: 15px;
+  }
+  .img-content > img {
+    width: 450px;
+  }
+  .more {
+    display: flex;
+    justify-content: center;
+  }
+}
