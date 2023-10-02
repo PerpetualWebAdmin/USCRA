@@ -15,8 +15,7 @@
     grid-template-columns: repeat(4, 300px);
     justify-content: center;
     align-content: center;
-    
-    gap: 5px;
+    gap: 10px;
 }
 .schools{
     padding-bottom: 20px;
