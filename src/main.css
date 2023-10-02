@@ -13,7 +13,7 @@
 /*Start of Navigation Bar*/
 .navbar {
   width: 100%;
-  height: 110px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,7 @@
 }
 .logo > a > img {
   margin: 15px;
-  width: 100px;
+  width: 110px;
 }
 .nav-items {
   display: inline-block;
@@ -143,9 +143,11 @@ body {
 .details {
   padding: 20px;
 }
-.details > h1,
-p {
+.details > h1
+{
   text-align: justify;
+}
+.introduction{
   padding-bottom: 30px;
 }
 .details > h1 {
@@ -190,6 +192,7 @@ p {
   margin-bottom: 50px;
 }
 
+/*Horizontal Scroll Animation*/
 .scroller {
   max-width: 600px;
 }
@@ -201,7 +204,7 @@ p {
   gap: 1rem;
 }
 .scroller__inner > img{
-  width: 100px;
+  width: 80px;
 }
 .scroller[data-animated="true"] {
   overflow: hidden;

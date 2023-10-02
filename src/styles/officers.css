@@ -1,0 +1,52 @@
+.Officers {
+  width: 100%;
+}
+.info {
+  display: grid;
+  place-content: center;
+  font-size: 25px;
+}
+.info > h4 {
+  text-align: center;
+  font-size: 15px;
+}
+.members{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.schools{
+    padding-bottom: 20px;
+}
+.member{
+    text-align: center;
+}
+.member-img{
+    display: flex;
+    justify-content: center;
+    
+}
+.imgs {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.position {
+  font-weight: 600;
+}
+br{
+    display: none;
+}
+@media(width < 720px){
+    .members{
+        display: flex;
+        flex-wrap: wrap ;
+    }
+    br{
+        display: block;
+    }
+   
+}   
