@@ -305,4 +305,7 @@ body {
     display: flex;
     justify-content: center;
   }
+  .scroller__inner > img{
+    width: 60px;
+  }
 }

@@ -19,7 +19,8 @@ navItems.forEach((menu) => {
   menu.addEventListener("click", (e) => {
     let child = menu.querySelectorAll(":scope *"); //The Purpose of Using Scope is to target all the items on the nav-items
 
-    if (menu.classList.contains("active")) { //ClassList Contains - The ClassList Contains purpose is to check if the data is present which means if it is true then it will throwback to the target element. If not then it will not be executed
+    if (menu.classList.contains("active")) {
+      //ClassList Contains - The ClassList Contains purpose is to check if the data is present which means if it is true then it will throwback to the target element. If not then it will not be executed
       menu.classList.remove("active");
 
       navItems.forEach((sub) => {
@@ -47,8 +48,7 @@ navItems.forEach((menu) => {
   });
 });
 
-
-//Horizontal Animation
+//Start of Members Horizontal Animation
 
 const scrollers = document.querySelectorAll(".scroller");
 
@@ -76,3 +76,4 @@ function addAnimation() {
     });
   });
 }
+
