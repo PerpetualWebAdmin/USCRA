@@ -27,7 +27,11 @@
   text-decoration: none;
   color: black;
 }
-
+.header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
 @media (width < 720px) {
   br {
     display: none;

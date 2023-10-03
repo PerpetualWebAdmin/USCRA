@@ -24,7 +24,7 @@
 }
 .logo > a > img {
   margin: 15px;
-  width: 110px;
+  width: 520px;
 }
 .nav-items {
   display: inline-block;
@@ -80,7 +80,7 @@ label:hover {
 .sub-menu ul li {
   width: 100%;
 }
-.subs{
+.subs {
   font-size: 18px;
 }
 .subs.active > .sub-menu {
@@ -143,11 +143,10 @@ body {
 .details {
   padding: 20px;
 }
-.details > h1
-{
+.details > h1 {
   text-align: justify;
 }
-.introduction{
+.introduction {
   padding-bottom: 30px;
 }
 .details > h1 {
@@ -173,10 +172,8 @@ body {
   margin: 10px;
 }
 
-
-
 /* Start of Members Section */
-.Members {
+/* .Members {
   width: 100%;
   display: grid;
   min-block-size: 100vh;
@@ -190,10 +187,10 @@ body {
   text-align: center;
   font-size: 35px;
   margin-bottom: 50px;
-}
+} */
 
 /*Horizontal Scroll Animation*/
-.scroller {
+/* .scroller {
   max-width: 600px;
 }
 
@@ -245,12 +242,20 @@ body {
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
-}
+} */
+
 
 /* general styles */
 
-
 /* End of Members Section */
+
+.Banner{
+  width: 100%;
+}
+.banner-img > img{
+  width: 1000px;
+  margin:30px;
+}
 @media (width < 720px) {
   .navham {
     display: block;
@@ -299,13 +304,17 @@ body {
     font-size: 15px;
   }
   .img-content > img {
-    width: 450px;
+    width: 400px;
   }
   .more {
     display: flex;
     justify-content: center;
   }
-  .scroller__inner > img{
+  .scroller__inner > img {
     width: 60px;
+  }
+  .logo > a > img {
+    margin: 15px;
+    width: 350px;
   }
 }
