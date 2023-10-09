@@ -48,32 +48,51 @@ navItems.forEach((menu) => {
   });
 });
 
-//Start of Members Horizontal Animation
+//Modal Section
+const membersModal = document.querySelector(".open-imgs");
+const imgs = document.querySelectorAll(".members-imgs > img");
+const closeImgs = document.querySelector(".close-imgs");
+const openImgs = document.querySelector(".open-imgs > img");
+let currentValue = -1;
 
-const scrollers = document.querySelectorAll(".scroller");
+//Targeting all the image array using the foreach syntax
+imgs.forEach((image, index) => {
 
-// If a user hasn't opted in for recuded motion, then we add the animation
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    // add data-animated="true" to every `.scroller` on the page
-    scroller.setAttribute("data-animated", true);
-
-    // Make an array from the elements within `.scroller-inner`
-    const scrollerInner = scroller.querySelector(".scroller__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
-
-    // For each item in the array, clone it
-    // add aria-hidden to it
-    // add it into the `.scroller-inner`
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    });
+  //Adding an event so the image will be clickable
+  image.addEventListener("click", (n) => {
+    currentValue = index;
+    //Once the target modal has been click, all the members of the active will be launch
+    membersModal.classList.toggle("active");
+    //Once the openimgs has been toggle then the output will be the contain imgs of the Imgs
+    openImgs.src = n.target.src;
   });
-}
+});
 
+closeImgs.addEventListener("click", () => {
+  membersModal.classList.remove("active");
+});
+
+window.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    membersModal.classList.remove("active");
+  }
+});
+
+const carouselButtons = document.querySelectorAll(".carousel");
+
+carouselButtons.forEach((buttons) => {
+
+  let x = 0;
+  if (buttons.classList.contains("prev")) {
+    x = -1;
+  } else {
+    x = 1;
+  }
+
+
+  buttons.addEventListener('click', ()=>{
+    openImgs = imgs[currentValue + x].src
+
+    currentValue += x;
+  })
+});
