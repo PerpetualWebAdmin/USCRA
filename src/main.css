@@ -145,9 +145,11 @@ body {
 }
 .details > h1 {
   text-align: justify;
+  padding-bottom: 30px;
 }
 .introduction {
   padding-bottom: 30px;
+  text-align: justify;
 }
 .details > h1 {
   font-size: 25px;
@@ -244,18 +246,59 @@ body {
   }
 } */
 
-
 /* general styles */
 
 /* End of Members Section */
 
-.Banner{
+/*Start of Registration*/
+.Registration {
   width: 100%;
 }
-.banner-img > img{
-  width: 1000px;
-  margin:30px;
+.containers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.informations {
+  background-color: rgb(80, 200, 120);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 7dvh;
+}
+.informations > h2,h3{
+  font-size: 1.5em;
+  color: white;
+  padding-bottom: 5px;
+}
+.perps {
+  padding-bottom: 20px;
+}
+
+.button {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(75, 0, 130);
+}
+.button:hover{
+    background-color: rgb(232, 228, 201);
+    color: #2f2f2f;
+}
+.imgs {
+  width: 45%;
+  display: flex;
+}
+.imgs > img {
+  width: 550px;
+}
+/*End of Registration*/
+
 @media (width < 720px) {
   .navham {
     display: block;
@@ -317,16 +360,30 @@ body {
     margin-left: 0px;
     width: 280px;
   }
-  br{
+  br {
     display: none;
   }
-  .introduction{
+  .introduction {
     text-align: justify;
     font-size: 15px;
   }
+
+  .containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .regnow {
+    display: flex;
+    justify-content: center;
+  }
+  .imgs {
+    display: none;
+  }
 }
 
-@media(width < 420px){
+@media (width < 420px) {
   .logo > a > img {
     margin-left: 0px;
     width: 300px;
