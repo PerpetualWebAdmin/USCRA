@@ -53,11 +53,11 @@ const membersModal = document.querySelector(".open-imgs");
 const imgs = document.querySelectorAll(".members-imgs > img");
 const closeImgs = document.querySelector(".close-imgs");
 const openImgs = document.querySelector(".open-imgs > img");
+
 let currentValue = -1;
 
 //Targeting all the image array using the foreach syntax
 imgs.forEach((image, index) => {
-
   //Adding an event so the image will be clickable
   image.addEventListener("click", (n) => {
     currentValue = index;
@@ -81,7 +81,6 @@ window.addEventListener("keydown", (event) => {
 const carouselButtons = document.querySelectorAll(".carousel");
 
 carouselButtons.forEach((buttons) => {
-
   let x = 0;
   if (buttons.classList.contains("prev")) {
     x = -1;
@@ -89,10 +88,8 @@ carouselButtons.forEach((buttons) => {
     x = 1;
   }
 
-
-  buttons.addEventListener('click', ()=>{
-    openImgs = imgs[currentValue + x].src
-
+  buttons.addEventListener("click", () => {
+    openImgs.src = imgs[currentValue + x].src;
     currentValue += x;
-  })
+  });
 });

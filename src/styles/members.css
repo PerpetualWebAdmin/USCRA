@@ -46,7 +46,31 @@
 .open-imgs.active {
   display: flex;
 }
-
+button{
+  position: fixed;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: .25rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+button:hover, button:focus{
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+button:focus{
+  outline: 1px solid black;
+}
+button.prev{
+  left: 0;
+}
+button.next{
+  right: 0;
+}
 @media (width < 600px) {
   .members-imgs > img {
   }
