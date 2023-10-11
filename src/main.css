@@ -23,7 +23,7 @@
   background-color: var(--main-color);
 }
 .logo > a > img {
-  margin: 15px;
+  margin: 10px;
   width: 520px;
 }
 .nav-items {
@@ -145,9 +145,11 @@ body {
 }
 .details > h1 {
   text-align: justify;
+  padding-bottom: 30px;
 }
 .introduction {
   padding-bottom: 30px;
+  text-align: justify;
 }
 .details > h1 {
   font-size: 25px;
@@ -244,18 +246,145 @@ body {
   }
 } */
 
-
 /* general styles */
 
 /* End of Members Section */
 
-.Banner{
+/*Start of Registration*/
+.Registration {
   width: 100%;
 }
-.banner-img > img{
-  width: 1000px;
-  margin:30px;
+.containers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.informations {
+  background-color: rgb(80, 200, 120);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10dvh;
+}
+.informations > h2,
+h3 {
+  font-size: 1.5em;
+  color: white;
+  padding-bottom: 5px;
+}
+.perps {
+  padding-bottom: 20px;
+}
+
+.button {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(75, 0, 130);
+}
+.button:hover {
+  background-color: rgb(232, 228, 201);
+  color: #2f2f2f;
+}
+.imgs {
+  width: 45%;
+  display: flex;
+}
+.imgs > img {
+  width: 550px;
+}
+/*End of Registration*/
+
+/*Start of Mission & Vision*/
+.MisVis {
+  width: 100%;
+}
+.contains {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mission,
+.vision {
+  width: 50%;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 15px;
+  text-align: justify;
+}
+.intro {
+  text-align: center;
+  color: black;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logos > img {
+  width: 300px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.buttons > a {
+  border: 1px solid black;
+  padding: 10px 30px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: beige;
+  background-color: rgb(75, 0, 130);
+  text-align: center;
+}
+.buttons > a:hover {
+  background-color: rgb(232, 228, 201);
+  color: #2f2f2f;
+}
+/*End of Mission & Vision*/
+.Resources {
+  width: 100%;
+  background-color: rgb(80, 200, 120);
+}
+.Resources > h1{
+  color: white;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.content > div{
+  width: 75%;
+  margin: 0 30px;
+}
+
+
+.titles{
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px 10px;
+  background-color: var(--main-color);
+}
+.rep-list{
+  padding-top: 10px;
+}
+.reps{
+  list-style: none;
+  padding: 5px;
+}
+.reps > a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+
 @media (width < 720px) {
   .navham {
     display: block;
@@ -304,7 +433,7 @@ body {
     font-size: 15px;
   }
   .img-content > img {
-    width: 400px;
+    width: 380px;
   }
   .more {
     display: flex;
@@ -314,7 +443,52 @@ body {
     width: 60px;
   }
   .logo > a > img {
-    margin: 15px;
-    width: 320px;
+    margin-left: 0px;
+    width: 280px;
+  }
+  br {
+    display: none;
+  }
+  .introduction {
+    text-align: justify;
+    font-size: 15px;
+  }
+
+  .containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .regnow {
+    display: flex;
+    justify-content: center;
+  }
+  .imgs {
+    display: none;
+  }
+
+  .contains {
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  .mission,
+  .vision {
+    text-align: justify;
+    width: 100%;
+    padding: 5px;
+  }
+  .content{
+    flex-wrap: wrap;
+  }
+}
+
+@media (width < 420px) {
+  .logo > a > img {
+    margin-left: 0px;
+    width: 300px;
+  }
+  .img-content > img {
+    width: 350px;
   }
 }
