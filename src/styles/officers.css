@@ -68,6 +68,9 @@
 br{
     display: none;
 }
+.main-element{
+  border: 1px solid black;
+}
 @media(width < 720px){
     .members, .board-members{
         display: flex;

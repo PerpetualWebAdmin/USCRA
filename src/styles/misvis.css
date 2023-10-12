@@ -59,6 +59,9 @@
 .main-contents > ul > li {
   list-style: none;
 }
+.footer{
+  border: 1px solid black;
+}
 @media (width < 720px) {
   .container {
     flex-wrap: wrap;

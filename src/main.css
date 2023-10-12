@@ -135,7 +135,7 @@ body {
 
 /*Global Variables*/
 .min-height {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /*Start of Home Section*/
@@ -174,20 +174,18 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
+  
 }
-.registern {
+.registern{
   background-color: var(--button-color);
 }
-.registern > span{
-  color: white;
-}
 .registern:hover{
-  background-color: var(--hover-);
   color: black;
 }
 .more > a:hover {
   background-color: var(--hover-);
   transition: 0.3s;
+  color: black;
 }
 
 .img-content > img {
@@ -205,7 +203,7 @@ body {
   align-items: center;
 }
 
-.informations {
+.infor {
   background-color: rgb(80, 200, 120);
   width: 100dvw;
   min-height: 90dvh;
@@ -216,8 +214,12 @@ body {
   flex-direction: column;
   padding: 10dvh;
 }
-.informations > h2,
-h3 {
+.infor> h2{
+  font-size: 2em;
+  color: white;
+  padding-bottom: 5px;
+}
+.infor > h3{
   font-size: 2em;
   color: white;
   padding-bottom: 5px;
