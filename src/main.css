@@ -131,13 +131,23 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
 }
+
+
+/*Global Variables*/
+.min-height{
+  min-height: 100vh;
+}
+
 /*Start of Home Section*/
 #Home {
   width: 100%;
+  background-image: url('/assets/banner/Hero.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .contents {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 .details {
@@ -174,81 +184,6 @@ body {
   margin: 10px;
 }
 
-/* Start of Members Section */
-/* .Members {
-  width: 100%;
-  display: grid;
-  min-block-size: 100vh;
-  place-content: center;
-  font-family: system-ui;
-  font-size: 1.125rem;
-}
-.headers {
-  font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 35px;
-  margin-bottom: 50px;
-} */
-
-/*Horizontal Scroll Animation*/
-/* .scroller {
-  max-width: 600px;
-}
-
-.scroller__inner {
-  padding-block: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.scroller__inner > img{
-  width: 80px;
-}
-.scroller[data-animated="true"] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated="true"] .scroller__inner {
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
-}
-
-.scroller[data-direction="right"] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-direction="left"] {
-  --_animation-direction: forwards;
-}
-
-.scroller[data-speed="fast"] {
-  --_animation-duration: 20s;
-}
-
-.scroller[data-speed="slow"] {
-  --_animation-duration: 60s;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
-  }
-} */
-
-/* general styles */
-
-/* End of Members Section */
 
 /*Start of Registration*/
 .Registration {
@@ -268,13 +203,16 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 10dvh;
+
+  
 }
 .informations > h2,
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   color: white;
   padding-bottom: 5px;
 }
+
 .perps {
   padding-bottom: 20px;
 }
@@ -292,11 +230,13 @@ h3 {
   color: #2f2f2f;
 }
 .imgs {
-  width: 45%;
+  width: 40dvw;
+  height: 40dvw; 
   display: flex;
 }
 .imgs > img {
-  width: 550px;
+  width: 28dvw;
+ 
 }
 /*End of Registration*/
 
@@ -304,15 +244,16 @@ h3 {
 .MisVis {
   width: 100%;
 }
+
 .contains {
   display: flex;
   justify-content: space-evenly;
 }
 .mission,
-.vision {
-  width: 50%;
+.vision, .core-values {
+  width: 33%;
   border: 1px solid black;
-  margin: 20px;
+  margin: 10px;
   padding: 15px;
   text-align: justify;
 }
@@ -326,7 +267,8 @@ h3 {
   align-items: center;
 }
 .logos > img {
-  width: 300px;
+  width: auto;
+  object-fit: cover;
 }
 .buttons {
   display: flex;
@@ -347,12 +289,18 @@ h3 {
   color: #2f2f2f;
 }
 /*End of Mission & Vision*/
-.Resources {
+.Resourcess {
   width: 100%;
   background-color: rgb(80, 200, 120);
+
 }
-.Resources > h1{
+.Resourcess > h1{
+
   color: white;
+  padding-bottom: 15px;
+}
+.def-height{
+  min-height: 100vh;
 }
 .content {
   display: flex;
@@ -365,7 +313,7 @@ h3 {
 }
 
 
-.titles{
+.titless{
   text-align: center;
   font-size: 1.2rem;
   color: black;
@@ -384,12 +332,21 @@ h3 {
   text-decoration: none;
   color: var(--main-color);
 }
-
+@media(width > 650px){
+  .informations{
+  padding-top: 20dvh;
+  padding-bottom: 30dvh;
+  }
+  .Resourcess{
+    padding: 10dvh;
+  }
+}
 @media (width < 720px) {
   .navham {
     display: block;
     z-index: 2;
   }
+  
   .navham.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -453,16 +410,9 @@ h3 {
     text-align: justify;
     font-size: 15px;
   }
-
-  .containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .regnow {
-    display: flex;
-    justify-content: center;
+ 
+  .informations{
+    padding-bottom: 35dvh;
   }
   .imgs {
     display: none;
@@ -473,13 +423,16 @@ h3 {
     flex-wrap: wrap;
   }
   .mission,
-  .vision {
+  .vision,.core-values {
     text-align: justify;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
   }
   .content{
     flex-wrap: wrap;
+  }
+  .informations{
+    
   }
 }
 
