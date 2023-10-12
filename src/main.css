@@ -175,6 +175,16 @@ body {
   font-size: 20px;
   font-weight: 500;
 }
+.registern {
+  background-color: var(--button-color);
+}
+.registern > span{
+  color: white;
+}
+.registern:hover{
+  background-color: var(--hover-);
+  color: black;
+}
 .more > a:hover {
   background-color: var(--hover-);
   transition: 0.3s;
@@ -336,7 +346,6 @@ h3 {
   width: 100%;
   background-color: var(--main-color);
   color: #2f2f2f;
-
 }
 .main-element {
   display: flex;
@@ -414,6 +423,13 @@ h3 {
   .more {
     display: flex;
     justify-content: center;
+    margin: px;
+  }
+  .more > a {
+    margin: 5px;
+  }
+  .button {
+    color: white;
   }
   .scroller__inner > img {
     width: 60px;
@@ -451,15 +467,14 @@ h3 {
   .content {
     flex-wrap: wrap;
   }
-  .main-element{
+  .main-element {
     display: flex;
     justify-content: space-evenly;
-    
+
     flex-direction: column;
   }
-  .numbers{
+  .numbers {
     padding-top: 20px;
-   
   }
 }
 
