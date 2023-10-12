@@ -135,7 +135,7 @@ body {
 
 /*Global Variables*/
 .min-height {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 /*Start of Home Section*/
@@ -174,10 +174,18 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
+  
+}
+.registern{
+  background-color: var(--button-color);
+}
+.registern:hover{
+  color: black;
 }
 .more > a:hover {
   background-color: var(--hover-);
   transition: 0.3s;
+  color: black;
 }
 
 .img-content > img {
@@ -195,7 +203,7 @@ body {
   align-items: center;
 }
 
-.informations {
+.infor {
   background-color: rgb(80, 200, 120);
   width: 100dvw;
   min-height: 90dvh;
@@ -206,8 +214,12 @@ body {
   flex-direction: column;
   padding: 10dvh;
 }
-.informations > h2,
-h3 {
+.infor> h2{
+  font-size: 2em;
+  color: white;
+  padding-bottom: 5px;
+}
+.infor > h3{
   font-size: 2em;
   color: white;
   padding-bottom: 5px;
@@ -234,7 +246,7 @@ h3 {
   justify-content: center;
 }
 .imgs > img {
-  width: 27vw;
+  width: 365px;
 }
 /*End of Registration*/
 
@@ -336,7 +348,6 @@ h3 {
   width: 100%;
   background-color: var(--main-color);
   color: #2f2f2f;
-
 }
 .main-element {
   display: flex;
@@ -414,6 +425,13 @@ h3 {
   .more {
     display: flex;
     justify-content: center;
+    margin: px;
+  }
+  .more > a {
+    margin: 5px;
+  }
+  .button {
+    color: white;
   }
   .scroller__inner > img {
     width: 60px;
@@ -451,15 +469,14 @@ h3 {
   .content {
     flex-wrap: wrap;
   }
-  .main-element{
+  .main-element {
     display: flex;
     justify-content: space-evenly;
-    
+
     flex-direction: column;
   }
-  .numbers{
+  .numbers {
     padding-top: 20px;
-   
   }
 }
 

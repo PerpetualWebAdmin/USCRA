@@ -72,6 +72,9 @@ button.prev{
 button.next{
   right: 0;
 }
+.main-element{
+  border: 1px solid black;
+}
 @media (width < 600px) {
 
   .open-imgs > img {
@@ -82,9 +85,7 @@ button.next{
   .members-imgs > img {
     width: 300px;
   }
-  button{
-   
-  }
+
 
 }
 @media (width < 420px) {
