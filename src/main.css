@@ -91,6 +91,7 @@ label:hover {
   top: 100%;
   background-color: var(--main-color);
   z-index: 5;
+  width: 100%;
 }
 .subs.active > .arrow {
   transform: rotate(180deg);
@@ -204,7 +205,7 @@ body {
 
 .infor {
   background-color: rgb(80, 200, 120);
-  width: 80dvw;
+  width: 100dvw;
   min-height: 94dvh;
   display: flex;
   justify-content: center;
@@ -375,10 +376,23 @@ body {
     padding: 10dvh;
   }
   .infor {
+    padding-top: 0;
     padding-bottom: 250px;
   }
 }
 @media (width < 720px) {
+  .infor{
+    padding-bottom: 250px;
+  }
+  .infor > h2 {
+    font-size: 30px;
+  }
+  .infor > h3{
+    font-size: 25px;
+  }
+  .infor > p{
+    font-size: 20px;
+  } 
   .navham {
     display: block;
     z-index: 2;
