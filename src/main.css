@@ -205,14 +205,14 @@ body {
 
 .infor {
   background-color: rgb(80, 200, 120);
-  width: 100dvw;
-  min-height: 90dvh;
+  width: 80dvw;
+  min-height: 94dvh;
   display: flex;
   justify-content: center;
 
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 10dvh;
+  padding: 8dvh;
 }
 .infor> h2{
   font-size: 4dvw;
@@ -312,7 +312,7 @@ body {
   padding-bottom: 15px;
 }
 .def-height {
-  min-height: 100vh;
+  min-height: 40vh;
 }
 .content {
   display: flex;
@@ -372,7 +372,7 @@ body {
     padding-bottom: 30dvh;
   }
   .Resourcess {
-    padding: 10dvh;
+    padding: 5dvh;
   }
 }
 @media (width < 720px) {
