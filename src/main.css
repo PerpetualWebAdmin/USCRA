@@ -91,6 +91,7 @@ label:hover {
   top: 100%;
   background-color: var(--main-color);
   z-index: 5;
+  width: 100%;
 }
 .subs.active > .arrow {
   transform: rotate(180deg);
@@ -174,12 +175,11 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
-  
 }
-.registern{
+.registern {
   background-color: var(--button-color);
 }
-.registern:hover{
+.registern:hover {
   color: black;
 }
 .more > a:hover {
@@ -206,21 +206,19 @@ body {
 .infor {
   background-color: rgb(80, 200, 120);
   width: 100dvw;
-  min-height: 90dvh;
+  min-height: 94dvh;
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 10dvh;
+  padding: 8dvh;
 }
-.infor> h2{
+.infor > h2 {
   font-size: 4dvw;
   color: white;
   padding-bottom: 5px;
-
 }
-.infor > h3{
+.infor > h3 {
   font-size: 2.5dvw;
   color: white;
   padding-bottom: 5px;
@@ -230,8 +228,11 @@ body {
   padding-bottom: 20px;
 }
 
-.infor > p{
+.infor > p {
   font-size: 1.5dvw;
+}
+.regnow{
+  margin-top: 20px;
 }
 .button {
   text-decoration: none;
@@ -312,7 +313,7 @@ body {
   padding-bottom: 15px;
 }
 .def-height {
-  min-height: 100vh;
+  min-height: 10vh;
 }
 .content {
   display: flex;
@@ -374,8 +375,24 @@ body {
   .Resourcess {
     padding: 10dvh;
   }
+  .infor {
+    padding-top: 0;
+    padding-bottom: 250px;
+  }
 }
 @media (width < 720px) {
+  .infor{
+    padding-bottom: 250px;
+  }
+  .infor > h2 {
+    font-size: 30px;
+  }
+  .infor > h3{
+    font-size: 25px;
+  }
+  .infor > p{
+    font-size: 20px;
+  } 
   .navham {
     display: block;
     z-index: 2;
