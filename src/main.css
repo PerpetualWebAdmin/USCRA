@@ -312,7 +312,7 @@ body {
   padding-bottom: 15px;
 }
 .def-height {
-  min-height: 40vh;
+  min-height: 10vh;
 }
 .content {
   display: flex;
@@ -372,7 +372,7 @@ body {
     padding-bottom: 30dvh;
   }
   .Resourcess {
-    padding: 5dvh;
+    padding: 10dvh;
   }
   .infor {
     padding-bottom: 250px;
