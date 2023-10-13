@@ -135,7 +135,7 @@ body {
 
 /*Global Variables*/
 .min-height {
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 /*Start of Home Section*/
@@ -215,12 +215,13 @@ body {
   padding: 10dvh;
 }
 .infor> h2{
-  font-size: 2em;
+  font-size: 4dvw;
   color: white;
   padding-bottom: 5px;
+
 }
 .infor > h3{
-  font-size: 2em;
+  font-size: 2.5dvw;
   color: white;
   padding-bottom: 5px;
 }
@@ -229,6 +230,9 @@ body {
   padding-bottom: 20px;
 }
 
+.infor > p{
+  font-size: 1.5dvw;
+}
 .button {
   text-decoration: none;
   border: 1px solid black;
@@ -246,7 +250,7 @@ body {
   justify-content: center;
 }
 .imgs > img {
-  width: 365px;
+  width: 28dvw;
 }
 /*End of Registration*/
 
@@ -262,11 +266,11 @@ body {
 .mission,
 .vision,
 .core-values {
-  width: 33%;
+  width: 100%;
   border: 1px solid black;
-  margin: 10px;
-  padding: 15px;
-  text-align: justify;
+  margin: 50px;
+  padding: 5px;
+  text-align: center;
 }
 .intro {
   text-align: center;
