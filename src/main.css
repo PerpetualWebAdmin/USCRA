@@ -174,12 +174,11 @@ body {
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
-  
 }
-.registern{
+.registern {
   background-color: var(--button-color);
 }
-.registern:hover{
+.registern:hover {
   color: black;
 }
 .more > a:hover {
@@ -209,19 +208,16 @@ body {
   min-height: 94dvh;
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   flex-direction: column;
   padding: 8dvh;
-
 }
-.infor> h2{
+.infor > h2 {
   font-size: 4dvw;
   color: white;
   padding-bottom: 5px;
-
 }
-.infor > h3{
+.infor > h3 {
   font-size: 2.5dvw;
   color: white;
   padding-bottom: 5px;
@@ -231,8 +227,11 @@ body {
   padding-bottom: 20px;
 }
 
-.infor > p{
+.infor > p {
   font-size: 1.5dvw;
+}
+.regnow{
+  margin-top: 20px;
 }
 .button {
   text-decoration: none;
@@ -375,7 +374,7 @@ body {
   .Resourcess {
     padding: 5dvh;
   }
-  .infor{
+  .infor {
     padding-bottom: 250px;
   }
 }
