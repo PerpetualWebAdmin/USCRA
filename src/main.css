@@ -213,6 +213,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 8dvh;
+
 }
 .infor> h2{
   font-size: 4dvw;
@@ -373,6 +374,9 @@ body {
   }
   .Resourcess {
     padding: 5dvh;
+  }
+  .infor{
+    padding-bottom: 250px;
   }
 }
 @media (width < 720px) {
