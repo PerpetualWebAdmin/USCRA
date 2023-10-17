@@ -91,26 +91,13 @@ label:hover {
   top: 100%;
   background-color: var(--main-color);
   z-index: 5;
-  width: 100%;
+
 }
 .subs.active > .arrow {
   transform: rotate(180deg);
   transition: 0.5s all ease-in;
 }
-/*Start of Arrow Animation*/
-input[type="checkbox"]:checked ~ .sub-menu {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: var(--main-color);
-}
-input[type="checkbox"]:checked ~ .arrow {
-  transform: rotate(180deg);
-  transition: 0.5s all ease-in;
-}
 
-/*End of Arrow Animation*/
 
 /*Start of Hamburger Menu*/
 .navham {
@@ -381,6 +368,9 @@ body {
   }
 }
 @media (width < 720px) {
+  .subs.active > .sub-menu{
+    width: 100%;
+  }
   .infor{
     padding-bottom: 250px;
   }
