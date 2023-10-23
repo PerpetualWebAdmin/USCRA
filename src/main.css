@@ -413,9 +413,7 @@ body {
     z-index: 0;
     right: 0;
   }
-  .nav-item {
-    margin: 16px 10px;
-  }
+ 
   .navlist.active {
     top: 99px;
   }
@@ -498,5 +496,8 @@ body {
   }
   .img-content > img {
     width: 350px;
+  }
+  .more > a {
+    margin: 2px;
   }
 }
