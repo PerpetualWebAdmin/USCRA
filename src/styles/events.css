@@ -1,0 +1,24 @@
+.main-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.other-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-imgs {
+  display: flex;
+  justify-content: center;
+}
+.main-info {
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+}
+.one{
+  display: none;
+}
+.main-imgs > img {
+  width: 300px;
+}
