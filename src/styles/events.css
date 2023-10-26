@@ -15,10 +15,29 @@
   display: grid;
   place-items: center;
   border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(80, 200, 120);
 }
 .one{
   display: none;
 }
 .main-imgs > img {
   width: 300px;
+}
+.Reger,.Ten{
+  color: white;
+  font-size: 25px;
+}
+.Date{
+  font-size: 20px;
+}
+.reg-now{
+  margin-top: 10px;
+}
+.reg-now > a{
+  border: 1px solid black;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(45, 48, 151);
 }
