@@ -91,13 +91,11 @@ label:hover {
   top: 100%;
   background-color: var(--main-color);
   z-index: 5;
-
 }
 .subs.active > .arrow {
   transform: rotate(180deg);
   transition: 0.5s all ease-in;
 }
-
 
 /*Start of Hamburger Menu*/
 .navham {
@@ -218,7 +216,7 @@ body {
 .infor > p {
   font-size: 1.5dvw;
 }
-.regnow{
+.regnow {
   margin-top: 20px;
 }
 .button {
@@ -263,6 +261,10 @@ body {
 .intro {
   text-align: center;
   color: black;
+  font-size: 50px;
+}
+.mission > p, .vision > p{
+  font-size: 30px;
 }
 .logos {
   display: flex;
@@ -325,6 +327,7 @@ body {
 .reps {
   list-style: none;
   padding: 5px;
+  font-size: 25px;
 }
 .reps > span {
   font-weight: 600;
@@ -368,21 +371,21 @@ body {
   }
 }
 @media (width < 720px) {
-  .subs.active > .sub-menu{
+  .subs.active > .sub-menu {
     width: 100%;
   }
-  .infor{
+  .infor {
     padding-bottom: 250px;
   }
   .infor > h2 {
     font-size: 30px;
   }
-  .infor > h3{
+  .infor > h3 {
     font-size: 25px;
   }
-  .infor > p{
+  .infor > p {
     font-size: 20px;
-  } 
+  }
   .navham {
     display: block;
     z-index: 2;
@@ -413,7 +416,7 @@ body {
     z-index: 0;
     right: 0;
   }
- 
+
   .navlist.active {
     top: 99px;
   }
