@@ -191,7 +191,7 @@ body {
 .infor {
   background-color: rgb(80, 200, 120);
   width: 100dvw;
-  min-height: 94dvh;
+  min-height: 20dvh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -236,8 +236,52 @@ body {
   justify-content: center;
 }
 .imgs > img {
-  width: 28dvw;
+  width: 500px;
 }
+.reg-ims-bot{
+  margin-top: 50px;
+}
+.regis-imgs > img{
+  width: 500px;
+}
+.open-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: none;
+}
+.close-imgs {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #3a4a6da9;
+  z-index: -1;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+
+.closetag{
+  position: fixed;
+top: 40px;
+right: 20%;
+cursor: pointer;
+z-index: 100;
+}
+.open-imgs > img{
+  width: 700px;
+}
+.open-imgs.active {
+  display: flex;
+}
+
+
 /*End of Registration*/
 
 /*Start of Mission & Vision*/
@@ -489,6 +533,12 @@ body {
   }
   .numbers {
     padding-top: 20px;
+  }
+  .regis-imgs > img{
+    width: 390px;
+  }
+  .open-imgs > img{
+    width: 400px;
   }
 }
 
